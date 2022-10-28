@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up initial page</title>
+    <style>
+        body{
+            position: relative;
+            background: linear-gradient(120deg,#f3e2ac, #67f8b4);
+            text-transform: traslate(-50%,-50);
+        }
+        .class{
+            text-align: center;
+            margin-top: 20%;/*
+            margin-left: 35%; */
+            position: absolute;
+            top: 50% ;
+            left: 50% ;
+            transform: translate(-50%, -50%);
+            width:  400px;
+            background: #35BDD0;
+            border-radius: 10px ;
+        }
+        h1, h2{
+            color: #DE4839;
+            text-decoration: underline;
+        }
+        .blink{
+            margin-left: 5%;
+            animation: blink 1s infinite ;
+        }
+        @keyframes blink{
+            0%{opacity:0;}
+            50%{opacity: .5;}
+            100%{opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <div class="class">
+    <h1>One step for Sign-Up</h1>
+        <br><br>
+        <h2>
+            Are you Student or Shopker ???
+                <br><br>
+        </h2>
+    <div class="blink" >
+        <h2>       
+        <a href="signup_student.html" style="color: white" >Student</a>
+                <br><br>
+                <a href="signup_shopker.html" style="color: white">Shopker</a>
+            </h2>
+    </div>
+</div>
+</body>
+</html>

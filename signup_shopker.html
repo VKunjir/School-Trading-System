@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>apna bank signup form for shopkeeper</title>
+<link rel="stylesheet" href="signup_shopker.css">
+
+</head>
+
+<body>
+<div class="container">
+<form action="" class="main_masala">
+<h1>Signup form of apni bank</h1>
+
+<!-- structuring shopkeeper's personal details using fieldset tag -->
+
+<fieldset>
+<legend class="personal_details">Shop owner's personal details</legend>
+<br>
+<p>
+<input type="text" placeholder="shopkeeper first name*" name="un" id="un" required>
+<input type="text" placeholder="shopkeeper middle name*" name="mn" id="mn" required>
+<input type="text" placeholder="shopkeeper last name*" name="ln" id="ln" required>
+</p>
+<p>
+
+<p>
+<input type="text" placeholder="shopkeeper's phone number*" name="upn" id="upn" required>
+</p>
+<p>
+<input type="number" placeholder="shopkeeper's age*" name="ua" id="ua" required>
+
+</p>
+<hr>
+<p>
+<br>
+<b>date of birth*</b> <input type="datetime-local" name="dob" id="dob" placeholder="shopkeeper's date of birth"
+required>
+</p>
+
+<p>
+<textarea name="address" id="" cols="95" rows="4"
+placeholder="shop owener's residential address address*" required></textarea>
+</p>
+
+<p>
+<input type="text" placeholder="shop owner's current city*" id="cc" name="cc" required>
+</p>
+
+<p>
+<input type="text" name="pincode" placeholder="shopkeeper's pincode*" required></input>
+</p>
+
+
+<p>
+
+<br>
+Male*:<input type="radio" name="gender" id="1">
+Female*:<input type="radio" name="gender" id="2">
+other*:<input type="radio" name="gender" id="3">
+</p>
+
+<p>
+<input type="text" name="phone_number" id="pn" placeholder="shopkeeper's phone number*" required>
+<input type="text" name="phone_number_2" id="pn2" placeholder="shopkeeper's optional phone number">
+</p>
+
+<p>
+<b> ID type*</b>
+
+<!-- user id type -->
+<select name="ID" id="ID" required>
+<option value="select your id">__select your id__</option>
+<option value="VISA">VISA</option>
+<option value="adhar card">adhar card</option>
+<option value="PAN CARD">PAN CARD</option>
+</select>
+</p>
+<p>
+<input type="text" name="adhar card" id="dob" placeholder="shopkeeper's goverment id number*"
+required></input>
+</p>
+
+<p>
+<input type="email" placeholder="shopkeeper's email id*" name="smi" name="smi" required>
+</p>
+</fieldset>
+
+<br>
+<!-- structuring below html code for getting shopkeeper's shop details -->
+<fieldset>
+<legend> shopkeeper's shop details</legend>
+
+<p>
+<input type="text" name="sn" id="sn" placeholder="shop owener's shop name*" required>
+</p>
+
+<p>
+<textarea name="SA" id="SA" cols="95" rows="4" placeholder="shop address*" required></textarea>
+</p>
+
+<p>
+<input type="text" placeholder="shop located in which city?*" id="cc" name="cc" required>
+</p>
+
+<p>
+<input type="text" name="pincode" placeholder="pincode of that city*" required></input>
+</p>
+<p>
+<select name="ID" id="ID" required>
+<option value="select your id">__shop type__</option>
+<option value="stationary">stationary</option>
+<option value="canteen">canteen</option>
+<option value="medical">medical</option>
+</p>
+</select>
+</fieldset>
+
+<h3 class="response">For filling information about your account please click on button below</h3>
+<p>
+<input type="submit" value="next" href="index.html">
+</p>
+</form>
+
+</body>
+</div>
+
+</html>

@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: 'lubrication' !important;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+    background: url(https://tse3.mm.bing.net/th?id=OIP.soGrTiJ_nFiOXWJz5656fwHaEo&pid=Api&P=0) no-repeat center center fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    background-color: rgba(26, 21, 21, 0.712);
+}
+
+.container {
+    color: white;
+    position: absolute;
+    display: block;
+    top: 5%;
+    left: 20%;
+    right: 20%;
+}
+
+.un {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    top: 2%;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    width: 50%;
+    width: 100%;
+    display: inline-block;
+    font-size: 40px;
+    border-bottom: 5px solid white;
+    margin-bottom: 15px;
+    padding: 13px 0;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    color: black;
+    border-radius: 5px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+p {
+    color: white;
+    text-align: center;
+    margin: 15px;
+}
+
+input[type="radio"] {
+    width: 8%;
+
+}
+
+fieldset {
+    color: black;
+    background-color: transparent;
+    border: solid 5px #ccc;
+}
+
+input[type="submit"] {
+    background-color: rgba(75, 70, 70, 0.63);
+    color: white;
+    padding: 24px 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 18px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="submit"]:hover {
+    color: aqua;
+    background-color: green;
+}
+
+select:hover,
+input[type="radio"]:hover,
+input[type="text"]:hover,
+input[type="datetime-local"]:hover,
+input[type="email"]:hover,
+textarea:hover,
+input[type="number"] {
+    cursor: pointer;
+    color: black; 
+}
+
+input[type="password"] {
+    color: black;
+    border-radius: 5px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+
+legend {
+    font-size: 32px;
+    font-weight: bold;
+    font-style: 'arial';
+}
+
+.response {
+    color: white;
+    text-align: center;
+}
