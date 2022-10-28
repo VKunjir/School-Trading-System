@@ -1,3 +1,68 @@
+<?php
+    $insert = false ;
+    if($_POST['name'])
+    {
+
+        $server = "localhost";
+        $username = "root" ;
+        $password = "" ;
+
+        $con = mysqli_connect($server, $username, $password);
+
+        if(!$con){
+            die("connection to this database failed due to ". mysqli_connect_error());
+        }
+
+
+        $name = $_POST['name'];
+        $mname = $_POST['mname'];
+        $lname = $_POST['lname'];
+        $address = $_POST['address'];
+        $cc = $_POST['cc'];
+        $pincode = $_POST['pincode'];
+        $age = $_POST['age'];
+        $phone_number = $_POST['phone_number'];
+        $gender = $_POST['gender'];
+        $DOB = $_POST['DOB'];
+        $ubp = $_POST['ubp'];
+        $email = $_POST['email'];
+        $ID = $_POST['ID'];
+        $adhar_card = $_POST['adhar_card'];
+        $ID1 = $_POST['ID1'];
+        $cd = $_POST['cd'];
+        $institute_name = $_POST['institute_name'];
+        $id_number = $_POST['id_number'];
+        $address2 = $_POST['address2'];
+        $cc1 = $_POST['cc1'];
+        $pincode2 = $_POST['pincode2'];
+
+
+
+        $sql = "INSERT INTO `bank`.`studentdata` (`srno`, `name`, `mname`, `lname`, `address`, `cc`, `pincode`, `age`, `phone_number`, `gender`, `DOB`, `ubp`, `email`, `ID`, `adhar_card`, `ID1`, `cd`, `institute_name`, `id_number`, `address2`, `cc1`, `pincode2`, `Time`) VALUES ('$name', '$mname', '$lname', '$address', '$cc', '$pincode', '$age', '$phone_number', '$gender', '$DOB', '$ubpm', '$email', '$ID', '$adhar_card', '$ID1', '$cd', '$institute_name', '$id_number', '$address2', '$cc1', ' $pincode2', current_timestamp());";
+
+
+
+
+        if($con->query($sql) == true){
+            //echo "Successfully inserted ";
+            $insert = true ;
+        }
+        else
+        {
+            echo "ERROR: $sql <br> $con->error";
+        }
+    
+        $con->close();
+    }
+?>
+
+
+
+
+
+
+
+
 <!-- 
     Aim: Design the contact form using css and html 
     step 1: visualise the design of the form.
