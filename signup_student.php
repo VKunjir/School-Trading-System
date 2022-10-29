@@ -1,6 +1,6 @@
 <?php
     $insert = false ;
-    if($_POST['name'])
+    if(isset($_POST['name'])
     {
 
         $server = "localhost";
