@@ -1,6 +1,10 @@
 <?php
     $insert = false ;
+<<<<<<< HEAD
     if(isset($_POST['name'])
+=======
+    if(isset($_POST['name']))
+>>>>>>> ecac4e75cab62b6558ae2093f0ede428d327f63f
     {
 
         $server = "localhost";
@@ -38,7 +42,7 @@
 
 
 
-        $sql = "INSERT INTO `bank`.`studentdata` (`srno`, `name`, `mname`, `lname`, `address`, `cc`, `pincode`, `age`, `phone_number`, `gender`, `DOB`, `ubp`, `email`, `ID`, `adhar_card`, `ID1`, `cd`, `institute_name`, `id_number`, `address2`, `cc1`, `pincode2`, `Time`) VALUES ('$name', '$mname', '$lname', '$address', '$cc', '$pincode', '$age', '$phone_number', '$gender', '$DOB', '$ubpm', '$email', '$ID', '$adhar_card', '$ID1', '$cd', '$institute_name', '$id_number', '$address2', '$cc1', ' $pincode2', current_timestamp());";
+        $sql = "INSERT INTO `bank`.`studentdata` (`name`, `mname`, `lname`, `address`, `cc`, `pincode`, `age`, `phone_number`, `gender`, `DOB`, `ubp`, `email`, `ID`, `adhar_card`, `ID1`, `cd`, `institute_name`, `id_number`, `address2`, `cc1`, `pincode2`, `Time`) VALUES ('$name', '$mname', '$lname', '$address', '$cc', '$pincode', '$age', '$phone_number', '$gender', '$DOB', '$ubp', '$email', '$ID', '$adhar_card', '$ID1', '$cd', '$institute_name', '$id_number', '$address2', '$cc1', ' $pincode2', current_timestamp());";
 
 
 
@@ -85,12 +89,13 @@
 <head>
     <title>apni bank signup apna_bank_signup_page</title>
     <link rel="stylesheet" href="signup_student.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
     <div class="container">
-        <form action="signup_student.php" class="main_masala">
+        <form action="signup_student.php"
+        method="post" class="main_masala">
             <h1>Signup form of apni bank</h1>
             <br>
             <br>
@@ -209,9 +214,8 @@
                 <input type="submit" value="next" href="index.html">
             </p>
         </form>
-
+        </div>
+        <script src="signup_student.js"></script>
 </body>
-</div>
-
 </html>
 
