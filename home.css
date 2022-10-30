@@ -1,0 +1,106 @@
+/* adding background image */
+
+* {
+    font-family: 'lubrication';
+    }
+    
+    body {
+    background: url('bank.jpg');
+    /* setting background image size */
+    background-size: 1855px 1000px;
+    background-repeat: no-repeat;
+    }
+    
+    /*Now, designing student profile image tag*/
+    
+    .student_ki_profile {
+    width: 45px;
+    height: 45px;
+    float: right;
+    clip-path: circle(50% at 50% 50%);
+    
+    }
+    
+    /* Let's make design header*/
+    header {
+    background-color: rgb(20, 19, 19);
+    padding: 40px;
+    top: 0%;
+    width: 96%;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    height: 0px;
+    }
+    
+    /* now fixing the position of profule image*/
+    
+    .student_ki_profile {
+    display: grid;
+    position: absolute;
+    top: 9%;
+    right: 1%;
+    }
+    
+    /* now displaying and designing all anchor tags */
+    
+    a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 35px;
+    font-size: 18px;
+    }
+    
+    /* setting colour to main body */
+    /* setting div tag position*/
+    .welcome {
+    position: absolute;
+    top: 8%;
+    height: 840px;
+    font-size: 32px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.678);
+    left: 0%;
+    right: 3%;
+    }
+    
+    /* designing footer of the homepage */
+    footer {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    position: fixed;
+    /* top: 95%; */
+    width: 100%;
+    left: 0%;
+    bottom: 0%;
+    
+    }
+    
+    main {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    }
+    
+    /* Let's add some color changing and text decoration action on navigation tag */
+    
+    a:hover {
+    color: darkblue;
+    text-decoration: underline;
+    }
+    
+    div {
+    text-align: center;
+    }
+    
+    .intro {
+    text-shadow: 2px 2px white;
+    }
+    
+    .niche_wala {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+    
