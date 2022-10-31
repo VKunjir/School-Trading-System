@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Page</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        body{
+            background-image: url("https://tse2.mm.bing.net/th?id=OIP.dYODuwZQhsVyyrYkQKXXAQHaEK&pid=Api&P=0");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        #tranfer{
+            display: none;
+            margin-left: 20%;
+        }
+        #History{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <button type="button" name="money" onclick="document.getElementById('tranfer').style.display='block'">Transfer Money</button>
+        <div id="tranfer">
+            <form action="#" method="post">
+                <script src="html5-qrcode.min.js"></script>
+                    <style>
+                    .result{
+                        background-color: green;
+                        color:#fff;
+                        padding:20px;
+                    }
+                    .row{
+                        display:flex;
+                    }
+                    </style>
+                    <div class="row">
+                    <div class="col">
+                        <div style="width:500px;" id="reader"></div>
+                    </div>
+                    <div class="col" style="padding:30px;">
+                        <h4>SCAN RESULT</h4>
+                        <div id="result">Result Here</div>
+                    </div>
+                    </div>
+                    <script type="text/javascript">
+                    function onScanSuccess(qrCodeMessage) {
+                        document.getElementById('result').innerHTML = '<span class="result">'+qrCodeMessage+'</span>';
+                    }
+                    function onScanError(errorMessage) {
+                    //handle scan error
+                    }
+                    var html5QrcodeScanner = new Html5QrcodeScanner(
+                        "reader", { fps: 10, qrbox: 250 });
+                    html5QrcodeScanner.render(onScanSuccess, onScanError);
+                    </script>
+                    <br>
+                    Amount <input type="text" name="Amount" placeholder="enter a amount">
+                    <video id="video" autoplay></video>
+
+                            <header>Face recognition in the browser using Javascript</header>
+            <div class="container">
+            <video id="video" height="500" width="500" autoplay muted></video>
+            </div>
+            <div class="result-container">
+            <div id="emotion">Emotion</div>
+            <div id="gender">Gender</div>
+            <div id="age">Age</div>
+            </div>
+
+            <script src="/FACE-RECOGNITION/js/face-api.min.js"></script>
+            <script src="/FACE-RECOGNITION/js/main.js"></script>
+            </form>
+        </div>
+
+            
+            <button type="button" name="history" onclick="document.getElementById('History').style.display='block'">Check History</button>
+            <h2 id="History">
+                
+            </h2>
+        </nav>
+    </div>
+</body>
+<script src="script2.js"></script>
+</html>

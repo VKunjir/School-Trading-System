@@ -1,6 +1,6 @@
 /* setting font for all elements and making box sizing.*/
 
-* {
+*{
     font-family: 'Heebo', sans-serif;
     box-sizing: border-box;
     color: white;
