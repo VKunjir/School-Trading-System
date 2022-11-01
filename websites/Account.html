@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account for user to add, remove and create new accout webpage</title>
+    <link rel="stylesheet" href="/css/style_account.css">
+    <style>
+        #add_money{
+            display: none;
+        }
+        #remove_money{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Account</h1>
+    <h2>
+    <button type="button" name="add_money" onclick="document.getElementById('add_money').style.display='block'">Add Money</button>
+    </h2>
+    <div id="add_money">
+        <form action="#">
+            <label >Enter a Password</label>
+            <input type="password" required><br>
+            <label >Enter a Ammount</label>
+            <input type="number" required><br>
+            <input type="Submit" value="Submit" ><br>
+            <input type="reset" value="cancel">
+        </form>
+    </div>
+    <br>
+    <button type="button" name="add_money" onclick="document.getElementById('remove_money').style.display='block'">Remove Money</button>
+    </h2>
+    <div id="remove_money">
+        <form action="#">
+            <label >Enter a Password</label>
+            <input type="password" required><br>
+            <label >Enter a Ammount</label>
+            <input type="number" required><br>
+            <input type="Submit" value="Submit" ><br>
+            <input type="reset" value="cancel">
+        </form>
+    </div>
+
+
+    </div>
+</body>
+</html>
