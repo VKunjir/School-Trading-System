@@ -1,51 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account for user to add, remove and create new accout webpage</title>
-    <link rel="stylesheet" href="/css/style_account.css">
+    <link rel="stylesheet" href="/css/style_account.css".css">
     <style>
-        #add_money{
+        #add_money {
             display: none;
         }
-        #remove_money{
+
+        #remove_money {
+            display: none;
+        }
+
+        #create_account {
             display: none;
         }
     </style>
 </head>
+
 <body>
     <div class="main">
-        <h1>Account</h1>
-    <h2>
-    <button type="button" name="add_money" onclick="document.getElementById('add_money').style.display='block'">Add Money</button>
-    </h2>
-    <div id="add_money">
-        <form action="#">
-            <label >Enter a Password</label>
-            <input type="password" required><br>
-            <label >Enter a Ammount</label>
-            <input type="number" required><br>
-            <input type="Submit" value="Submit" ><br>
-            <input type="reset" value="cancel">
+      
+            <h1 class="heading_1">Account</h1>
+       
+            <button type="button" class="button" name="add_money"
+                onclick="document.getElementById('add_money').style.display='block'">Add
+                Money</button>
+
+            <div id="add_money">
+                <form action="#" id="add">
+                    <label>Enter a Password</label>
+                    <input type="password" required class="pass"><br>
+                    <label>Enter a Amount</label>
+                    <input type="number" id="Amount" required class="num"><br>
+                    <input type="Submit"  id="ID" value="Submit"><br>
+                    <input type="reset" id="ID" value="cancel">
+                </form>
+            </div>
+            <br>
+            <button type="button" name="remove_money" class="button"
+                onclick="document.getElementById('remove_money').style.display='block'">Remove Money</button>
+
+            <div id="remove_money">
+                <form action="#" id="remove">
+                    <label>Enter a Password</label>
+                    <input type="password" id="ID" required class="pass"><br>
+                    <label>Enter a Amount</label>
+                    <input type="number" id="ID" required class="num"><br>
+                    <input type="Submit" value="Submit" id="ID"><br>
+                    <input type="reset" id="ID" value="cancel">
+                </form>
+            </div>
+            <br>
+            <button type="button" name="create_account" class="button"
+                onclick="document.getElementById('create_account').style.display='block'">Create Bank Account</button>
+            <div id="create_account">
+                <form action="" class="container" id="account">
+                    <h1 class="heading">Create your bank trading account</h1>
+                    <fieldset>
+                        <legend> <b>Personal details</b></legend>
+                        <p>
+                            First name:<input class="name" type="text" name="first_name" id="u_n">
+                            Middle name:<input class="name" type="text" name="middle_name" id="m_n">
+                            Last name:<input class="name" type="text" name="Last_name" id="l_n">
+
+                        </p>
+
+                        <p>
+                            User age: <input type="number" name="U_A" id="U_A">
+                        </p>
+                        <p>
+                            User address: <textarea name="user_add" id="" cols="140" rows="150"></textarea>
+                        </p>
+
+                        <p>
+                            Name of the gurdian: <input type="text" class="G_N" name="G_N" id="G_N">
+                        </p>
+
+                        <p>
+                            Phone number: <input type="text" class="P_N" name="p_n" id="p_n">
+                        </p>
+
+                        <p>
+                            Other phone number: <input type="text" class="O_P_N" name="o_p_n" id="o_p_n">
+                        </p>
+                        <p>
+                            Annual income(in rupees): <input type="text" class="A_I" name="a_i" id="a_i">
+                        </p>
+
+                    </fieldset>
+                    <fieldset>
+
+                        <legend>Documental and educational details</legend>
+
+                        <!-- asking nationality of the user -->
+
+                        <p>
+                            <b>Nationality:</b>
+
+                            A] In-india: <input type="radio" class="nationality" name="nationality" id="0">
+                            B] Other: <input type="radio" class="nationality" name="nationality" id="1">
+                            <br>
+                            <br>
+                            Country name:(in case of other country) <input type="text" name="country_name"
+                                id="country_name">
+                            Citizenship: <input type="text" name="citizenship" id="citizenship">
+                        </p>
+                        <br>
+                        <p>
+                            Current institute name / school name: <input type="text" class="S_N" name="in_na" id="in_na"
+                            >
+                        </p>
+                        <br>
+                        <p>
+                            Current degree/ standard of student: <input type="text" class="C_D" name="c_d" id="c_d"
+                            >
+                        </p>
+                        <br>
+                        <p>
+                           <b>Religion:</b>
+                            A] Hindu: <input type="radio" name="Religion" id="0">
+                            B] Muslim: <input type="radio" name="Religion" id="1">
+                            C] Christian: <input type="radio" name="Religion" id="2">
+                            D] Sikh: <input type="radio" name="Religion" id="3">
+                            E] Others: <input type="radio" name="Religion" id="4">
+                        </p>
+
+                       <p>
+                            <b>Category:</b>
+                            A] General: <input type="radio" name="Category" id="1">
+                            B] OBC: <input type="radio" name="Category" id="2">
+                            C] SC: <input type="radio" name="Category" id="3">
+                            D] ST: <input type="radio" name="Category" id="4">
+                            E] Other: <input type="radio" name="Category" id="5">
+                        </p>
+
+                        <p>
+                            <b>Person with disability:</b>
+                            A] Yes <input type="radio" name="pwd" id="0">
+                            B] No <input type="radio" name="pwd" id="1">
+                        </p>
+
+                        <p>
+                            <b>ID type</b>
+                            <select name="ID" id="ID">
+                                <option value="select your id">select your id</option>
+                                <option value="VISA">VISA</option>
+                                <option value="adhar card">adhar card</option>
+                                <option value="PAN CARD">PAN CARD</option>
+                            </select>
+                        </p>
+                        <p>
+                            Enter your ID number: <input type="text" class="I_N" name="I_n" id="I_n">
+                        </p>
+                        <!-- Now, making a submssion portal for documents of students -->
+
+                        <p>
+                            Enter your password: <input type="password" class="pass" name="user_p" id="u_p">
+                        </p>
+
+                        <p>
+                            User must upload their documents below(in pdf form): <input type="file" name="U_I" id="U_I"
+                            >
+                        </p>
+                    </fieldset>
+
+                    <input type="submit" class="submission" value="submit" id="submission">
+        
         </form>
     </div>
-    <br>
-    <button type="button" name="add_money" onclick="document.getElementById('remove_money').style.display='block'">Remove Money</button>
-    </h2>
-    <div id="remove_money">
-        <form action="#">
-            <label >Enter a Password</label>
-            <input type="password" required><br>
-            <label >Enter a Ammount</label>
-            <input type="number" required><br>
-            <input type="Submit" value="Submit" ><br>
-            <input type="reset" value="cancel">
-        </form>
-    </div>
-
-
     </div>
 </body>
+
 </html>

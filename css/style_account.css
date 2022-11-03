@@ -1,31 +1,62 @@
-body{
+/*  adding and removing money css code */
+body {
     margin: 0;
     padding: 0;
     font-family: montserrat;
-    background: url('https://tse4.mm.bing.net/th?id=OIP.P7Q4Du34wV7vXihk2OD_kgHaEK&pid=Api&P=0');
+    background: url('data:image/jpeg;base64,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');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.main{
+
+.main {
     margin-top: 10px;
     width: 360px;
     height: 620px;
-    margin:50px  50px;
+    margin: 50px 50px;
+    width: 98%;
 }
-form{
+/* Aligining account heading at center */
+
+/* designing add amount button */
+.button {
+    /* width: 60px;
+    height: 70px; */
+    margin-top: 10px;
+    border: 2px solid black;
+    background-color: #49c1a2;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+form {
     width: 300px;
     margin-left: 20px;
-    border: black;
+    border: black; 
+    margin-left: auto; 
+    margin-right: auto;
 }
-form label{
-    border: black;
+
+
+#add,#remove{
+    border: 1px solid gray;
     display: flex;
+    flex-direction: column;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 20px;
+    width: 650px;
+    background-color: rgba(238, 213, 102, 0.24); 
+
 }
-form input{
+
+
+
+
+form,
+input {
     width: 100%;
     padding: 4.5px;
     border: none;
@@ -33,37 +64,175 @@ form input{
     border-radius: 10px;
     outline: none;
 }
-input[type="button"]{
-    width: 300px;
-    height: 35px;
-    margin-top: 10px;
-    border: none;
-    background-color: #49c1a2;
-    font-size: 45px;
+
+/* setting width for password and for number input line */
+ .num,.pass{
+    border-radius: 9px;
+    height: 25px;
+    width: auto;
+    border: 3px solid white;
+}
+
+input[type="submit"] {
+    height: 65px;
+    width: 150px;
+    margin-top: 30px;
+    background-color: #50DBB4;
+    font-size: 20px;
+    border: 3px solid white;
+}
+
+input[type="reset"] {
+    margin-top: 30px;
+    width: 150px;
+    height: 65px;
+    background-color: #E21717;
+    font-size: 20px;
+    border: 3px solid white;
+}
+
+#ID:hover {
+    background-color: rgb(47, 255, 231); 
     cursor: pointer;
 }
-input[type="Submit"]{
-    margin-top: 30px;
-    width: auto;
-    height: auto;
-    background-color: #50DBB4;
-    
-}
-input[type="reset"]{
-    margin-top: 10px;
-    width: auto;
-    height: auto;
-    background-color: #E21717;
-}
-input[type="Submit"]:hover{
-    background-color: rgb(47, 255, 231);
-}
-input[type="button"]:active{
+
+.button:active {
     background-color: #d035c3;
 }
-input[type="reset"]:hover{
+
+#ID:hover {
     background-color: rgb(47, 255, 231);
 }
-input[type="reset"]:active{
+
+#ID input[type="reset"]:active {
     background-color: #d035c3;
+}
+
+legend {
+    font-size: 36px;
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/*  create your bank account css code */
+
+/* now aligning all radio input towards right */
+input[type='radio'] {
+    margin: 24px;
+    text-align: center;
+    width: 3%;
+}
+
+/* Now, setting div form position */
+
+#create_account {
+    width: 85%;
+    font-size: 17.9px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     background-color: rgba(238, 213, 102, 0.24); 
+}
+
+* {
+    padding: 13px;
+    margin: 12px;
+}
+
+/* Now aligning heading at center */ 
+.heading_1{ 
+    text-align: center; 
+    font-size: 55px;
+    text-shadow: 2px 2px blue;
+}
+
+.heading {
+    text-align: center;
+    text-shadow: 2px 2px blue;
+}
+
+input[type='file'] {
+    width: 28%;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+textarea,
+select {
+    border-radius: 9px;
+    height: 25px;
+}
+
+body {
+    margin: 15px 30px;
+    padding: 8px;
+}
+
+.container {
+    /* padding: 5px 20px 15px 20px; */
+    width: 89%;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Setting widtht for each lines */
+
+
+
+#u_n,
+#m_n,
+#l_n,
+#U_A {
+    width: 20%;
+}
+
+#G_N,
+#p_n,
+#o_p_n,
+#a_i {
+    width: 35%;
+}
+
+#in_na,
+#c_d,
+#I_n,
+#u_p,
+#U_I {
+    width: 45%;
+}
+
+
+#submission {
+    background-color: rgba(75, 70, 70, 0.63);
+    padding: 24px 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 18px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+
+#country_name,
+#citizenship {
+    width: 24%;
+}
+
+#submission:hover {
+    background-color: rgb(47, 255, 231);
 }
