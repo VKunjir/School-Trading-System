@@ -2,9 +2,10 @@ body{
     margin:0 ;
     padding: 0;
     font-family: montserrat;
-    background: linear-gradient(120deg,#2980b9, #8e44ad);
-    height: 100vh;
-    overflow: hidden;
+    background: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190628/ourmid/pngtree-blue-background-with-geometric-forms-image_280879.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .center{
